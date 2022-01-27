@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Output from "./Output";
+import Output from "../components/Output";
 import { Grid } from "@mui/material";
 import MarkdownIt from "markdown-it/lib";
-import MarkdownInput from "./MarkdownInput";
-import DownloadButton from "./DownloadButton";
+import MarkdownInput from "../components/MarkdownInput";
+import DownloadButton from "../components/DownloadButton";
 
 function MainContent() {
   let [markdownText, setMarkDownText] = useState("");
