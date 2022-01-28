@@ -1,5 +1,6 @@
 {
   "name": "markdown-note",
+  "homepage": "https://retr0327.github.io/markdown-note-taking",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
