@@ -7,12 +7,10 @@ import {
   Typography,
   Grid,
   Button,
-  useMediaQuery,
 } from "@mui/material";
 
 function DownloadButton({ markdownText, htmlContent }) {
   const [fileName, setFileName] = useState("untitled-note");
-  const mediaQuery = useMediaQuery("(max-width:600px)");
 
   const onFileNameChange = (event) => {
     setFileName(event.target.value);
