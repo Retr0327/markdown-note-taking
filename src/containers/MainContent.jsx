@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Grid } from "@mui/material";
-import MarkdownIt from "markdown-it/lib"; 
-import { Output, MarkdownInput, DownloadButton } from "../components/index"
+import MarkdownIt from "markdown-it/lib";
+import { Output, MarkdownInput, DownloadButton } from "../components/index";
 
 function MainContent() {
-  let [markdownText, setMarkDownText] = useState("");
-  let [HTMLContent, setHTMLContent] = useState("");
+  const [markdownText, setMarkDownText] = useState("");
+  const [HTMLContent, setHTMLContent] = useState("");
 
   const handleTextInput = (event) => {
     setMarkDownText(event.target.value);
@@ -27,9 +27,9 @@ function MainContent() {
       <Grid item xs={12} sm={8} md={6}>
         <Output title="Output" htmlContent={HTMLContent} />
       </Grid>
-
+      
       <Grid item xs={12} md={12}>
-        <DownloadButton />
+        <DownloadButton markdownText={markdownText} htmlContent={HTMLContent} />
       </Grid>
     </Grid>
   );
